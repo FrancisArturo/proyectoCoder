@@ -19,7 +19,7 @@ input {
     outline: none;
 }
 .header-top {
-    background-color: #FFCEBD;
+    background-color: #fac665;
     padding-top: 12px;
     padding-bottom: 12px;
     display: flex;
@@ -193,7 +193,7 @@ main {
     flex-direction: column;
 }
 #footer-contenedor .footer-newsletter {
-    background-color: #FFCEBD;
+    background-color: #fac665 ;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -214,7 +214,7 @@ main {
     align-items: center;
     justify-content: space-between;
     padding: 12px 24px;
-    background-color: #fde2da;
+    background-color: #fae6c2;
     border: 1px solid black;
     border-radius: 30px;
     margin-top: 12px;
@@ -229,7 +229,7 @@ main {
     font-size: 20px;
 }
 #email:focus {
-    background-color: #FFCEBD;
+    background-color: #f8d38f;
 }
 .enviar {
     background-color: unset;
@@ -271,9 +271,6 @@ main {
 }
 .span-redes {
     display: flex;
-}
-.texto-seguinos a img {
-    height: 30px;
 }
 .logofooter {
     margin-top: unset;
@@ -376,4 +373,83 @@ main {
 .comprar-local:hover {
     background-color: black;
     color: white;
+}
+#contenido-contacto {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+}
+.contacto-info {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid black;
+}
+.galleta-contacto {
+    width: 90%;
+    height: auto;
+    border-right: 1px solid black;
+    object-fit: cover;
+}
+.texto-columna-contacto {
+    display: flex;
+    flex-direction: column;
+}
+.contacto-texto {
+    height: 50%;
+    border-bottom: 1px solid black;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contacto-texto h2 {
+    font-size: 32px;
+    margin-bottom: .5rem;
+}
+.contacto-texto p {
+    font-size: 18px;
+}.contacto-texto a {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    margin-top: 15px;
+    font-weight: 600;
+    
+}
+.contacto-texto a img {
+    height: 30px;
+    margin-right: .5rem;
+}
+.contacto-faq {
+    display: flex;
+}
+.contacto-faq img {
+    border: 1px solid black;
+    border-top: unset;
+    object-fit: cover;
+    width: auto;  
+}
+.texto-faq-contacto {
+    padding: 80px 200px;
+    width: auto;
+    min-width: calc(100%-200px);
+}
+.texto-faq-contacto h3 {
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+.texto-faq h4 {
+    font-size: 22px;
+}
+.texto-faq p {
+    font-size: 18px;
+    margin-bottom: .5rem;
+}
+
+@media (max-width: 768px) {
+    .contacto-info {
+        display: flex;
+        flex-direction: column;
+    }
 }
