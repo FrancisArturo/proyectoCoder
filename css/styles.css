@@ -82,7 +82,6 @@ main {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    height: 832px;
     border-bottom: 2px solid black;
     border-right: 2px solid black;
 }
@@ -91,16 +90,18 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 500px;
 }
 .texto-imagen h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 70px;
+    font-size: 60px;
     text-align: center;
 }
 .galletahometop {
     border-right: 2px solid black;
+    width: 100%;
     height: 100%;
-    width: 72%;
+    object-fit: cover;
 }
 .botoncomprarsection {
     text-decoration: none;
@@ -165,25 +166,30 @@ main {
 }
 #mira-productos {
     width: 100%;
-    height: 100%;
     position: relative;
     height: fit-content;
+    margin-bottom: 50px;
 }
 #mira-productos img {
     border: 2px solid black;
     width: 100%;
-    height: 650px;
+    max-height: 650px;
     object-fit: cover;
-    margin-bottom: 50px;
 }
-.botonnuestrosproductos {
+.contenedor-botonproductos {
+    display: flex;
+    flex-direction: column;
     position: absolute;
     align-items: center;
+    justify-content: center;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+}
+.botonnuestrosproductos {
     border: 2px solid white;
     border-radius: 30px;
     padding: 12px 25px;
-    margin-top: -400px;
-    margin-left: 700px;
     text-decoration: none;
     font-size: 40px;
     font-weight: 400;
@@ -297,12 +303,16 @@ main {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    height: 100%;
 }
-.contenedorcolumnas img {
-    vertical-align: middle;
+.columnahistoria-imagen img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    vertical-align: middle;
+}
+.columnahistoria-imagen {
+    border: 1px solid black;
 }
 .columna-flexible {
     display: flex;
@@ -311,9 +321,7 @@ main {
 .columnashistoria {
     width: 50%;
 }
-.columnahistoria-imagen {
-    border: 1px solid black;
-}
+
 .columnahistoria-texto {
     display: flex;
     padding: 3rem;
@@ -341,6 +349,7 @@ main {
     margin: 15px;
     line-height: 23px;
 }
+
 #local {
     display: flex;
     flex-direction: column;
@@ -405,7 +414,7 @@ main {
     border-bottom: 1px solid black;
 }
 .galleta-contacto {
-    width: 90%;
+    width: 65%;
     height: auto;
     border-right: 1px solid black;
     object-fit: cover;
@@ -413,6 +422,7 @@ main {
 .texto-columna-contacto {
     display: flex;
     flex-direction: column;
+    width: 35%;
 }
 .contacto-texto {
     height: 50%;
@@ -433,8 +443,7 @@ main {
     align-items: center;
     font-size: 22px;
     margin-top: 15px;
-    font-weight: 600;
-    
+    font-weight: 600;   
 }
 .contacto-texto a img {
     height: 30px;
@@ -444,22 +453,27 @@ main {
     display: flex;
 }
 .contacto-faq img {
+    display: block;
     border: 1px solid black;
     border-top: unset;
     object-fit: cover;
-    width: auto;  
+    width: 35%;  
 }
 .texto-faq-contacto {
-    padding: 80px 200px;
-    width: auto;
-    min-width: calc(100%-200px);
+    padding: 80px 150px;
+    width: 65%;
 }
 .texto-faq-contacto h3 {
     font-size: 35px;
     margin-bottom: 30px;
 }
+.texto-faq {
+    border-bottom: 1px solid black;
+    padding: 15px 0;
+}
 .texto-faq h4 {
     font-size: 22px;
+    margin-bottom: 15px;
 }
 .texto-faq p {
     font-size: 18px;
@@ -566,7 +580,7 @@ main {
         align-items: center;
     }
     .logofooter {
-        margin-top: 20px;
+        margin-top: 40px;
     }
     .logobottom {
         width: 180px;
@@ -576,6 +590,71 @@ main {
         grid-template-columns: repeat(4,minmax(0,1fr));
         column-gap: 30px;
     }
+    #galletasdeliciosas {
+        flex-direction: column;
+        border-right: unset;
+    }
+    .texto-imagen {
+        padding: 24px 20px;
+        align-items: center;
+        justify-content: center;
+    }
+    .texto-imagen h1 {
+        font-size: 40px;
+    }
+    .galletahometop {
+        border-right: none;
+        border-top: 2px solid black;
+        border-right: 2px solid black;
+    }
+    #ingredientes {
+        padding: 55px 0px;
+    }
+    .texto-ingredientes {
+        font-size: 32px;
+    }
+    #ingredientes-contendedor {
+        overflow-x: scroll;
+    } 
+    .botonnuestrosproductos {
+        font-size: 35px;
+    }
+    .contacto-info {
+        flex-direction: column;
+    }
+    .galleta-contacto {
+        border-right: unset;
+        border-bottom: 1px solid black;
+        width: 100%;
+    }
+    .contacto-texto {
+        padding: 40px 15%;
+    }
+    .contacto-faq img {
+        display: none;
+    }
+    .texto-columna-contacto {
+        width: 100%;
+    }
+    .texto-faq-contacto {
+        width: 100%;
+        padding: 80px 15%;
+    }
+    .contenedorcolumnas {
+        flex-direction: column;
+    }
+    .columnashistoria {
+        width: 100%;
+    }
+    .lider {
+        display: none;
+    }
+
+
+
+
+
+
 }
 @media (max-width: 576px) {
     .header-bottom {
@@ -635,6 +714,33 @@ main {
     }
     .titulo-local {
         justify-content: center;
+    }
+    .texto-imagen h1 {
+        font-size: 35px;
+    }
+    .texto-ingredientes {
+        font-size: 28px;
+    }
+    .botonnuestrosproductos {
+        font-size: 25px;
+    }
+    .contacto-texto {
+        padding: 30px 15px;
+    }
+    .contacto-texto h2 {
+        font-size: 25px;
+    }
+    .contacto-texto p {
+        font-size: 16px;
+    }
+    .contacto-texto a {
+        font-size: 18px;
+    }
+    .texto-faq-contacto {
+        padding: 30px 15px;
+    }
+    .texto-faq-contacto h3 {
+        font-size: 28px;
     }
 }
 
