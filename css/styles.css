@@ -20,28 +20,22 @@ input {
 }
 .header-top {
     background-color: #fcd896;
-    padding-top: 12px;
-    padding-bottom: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
 }
 #header-contenedor {
     position: sticky;
     z-index: 5000;
     top: 0;
 }
-.headertop p {
-    font-size: 18px;
+.header-top p {
+    margin-bottom: 0;
 }
 .header-bottom {
-    padding: 10px 40px;
-    height: 65px;
-    top:35px;
     background-color: #fcf7f1;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
     border-bottom: 2px solid black;
 }
 .botoncomprarheader {
@@ -54,7 +48,7 @@ input {
     padding: 13px;
     height: 100%;
     margin-left: 50px;
-    margin-right: auto;
+    margin-right: 0;
     color: black;
     transition: background-color .3s, color .3s;
 }
@@ -62,12 +56,25 @@ input {
     background-color: black;
     color: white;
 }
-.logohome {
-    height: 37px;
-    width: auto;
-    position: absolute;
-    top: 50%;
-    left: 42%;
+.logoflexible-1 {
+    display: none;
+}
+.logoflexible-2 {
+    padding-left: 70px;
+    vertical-align: middle;
+}
+.logoflexible-2 img {
+    object-fit: cover;
+}
+.links-flexibles {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    display: none;
+}
+.links-flexibles img {
+    height: 28px;
+    margin: 10px;
 }
 .linktexto {
     text-decoration: none;
@@ -95,6 +102,7 @@ main {
 .texto-imagen h1 {
     font-family: 'Playfair Display', serif;
     font-size: 60px;
+    font-weight: 600;
     text-align: center;
 }
 .galletahometop {
@@ -129,6 +137,7 @@ main {
     font-family: 'Playfair Display', serif;
     font-size: 40px;
     margin: 5px;
+    font-weight: 600;
 }
 #ingredientes-contendedor {
     display: flex;
@@ -209,7 +218,7 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 50px 0;
+    padding: 20px 0;
 }
 .newsletter-texto {
     margin-right: 40px;
@@ -272,6 +281,7 @@ main {
 .links-grupo h3 {
     font-size: 25px;
     margin-bottom: 4px;
+    font-weight: 600;
 }
 .links-grupo a {
     text-decoration: none;
@@ -499,6 +509,7 @@ main {
 .producto-imagen img {
     width: 100%;
     border: 1px solid black;
+    border-radius: 5%;
 }
 .producto-imagen-texto {
     display: flex;
@@ -517,12 +528,15 @@ main {
 }
 .hover-chip {
     background-image: url(../images/producto-galletachip-hover1.jpg);
+    border-radius: 5%;
 }
 .hover-chocolate {
     background-image: url(../images/prodcuto-galletadoblechocolate-hover1.jpg);
+    border-radius: 5%;
 }
 .hover-mani {
     background-image: url(../images/producto-galletamani-hover.jpg);
+    border-radius: 5%;
 }
 .producto-imagen-texto:hover {
     opacity: 1;
@@ -557,9 +571,6 @@ main {
     .linktexto {
         margin-right: 12px;
         font-size: 14px;
-    }
-    .botoncomprarheader {
-        margin-left: 20px;
     }
     .logohome {
         height: 30px;
@@ -610,11 +621,14 @@ main {
     #ingredientes {
         padding: 55px 0px;
     }
+    .ingrediente {
+        width: 50%;
+    }
     .texto-ingredientes {
         font-size: 32px;
     }
     #ingredientes-contendedor {
-        overflow-x: scroll;
+        flex-wrap: wrap;
     } 
     .botonnuestrosproductos {
         font-size: 35px;
@@ -651,26 +665,46 @@ main {
     }
 
 
-
+@media (max-width: 992px)   {
+    .botoncomprarheader {
+        display: none;
+    }
+    .logoflexible-1 {
+        display: unset;
+    }
+    .logoflexible-2 {
+        display: none;
+    }
+    .nav-item a {
+        border-bottom: 2px solid black;
+        font-size: 20px;
+        padding-left: 10px;
+        font-weight: 600;
+    }
+    .links-flexibles {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
 
 
 
 }
 @media (max-width: 576px) {
-    .header-bottom {
-        height: 80px;
-       justify-content: flex-start;
+    .header-top p {
+        font-size: 13px;
     }
-    .botoncomprarheader {
-        display: none;
+
+    .botoncomprarsection {
+        font-size: 20px;
     }
     .navegacion-flexible {
         display: flex;
         flex-direction: column;
-
     }
     .linktexto {
-        font-size: 16px;
+        font-size: 14px;
     }
     #footer-contenedor .footer-newsletter {
         display: flex;
@@ -678,6 +712,9 @@ main {
         justify-content: center;
         align-items: center;
         padding: 25px;
+    }
+    .newsletter-texto {
+        margin-right: 0;
     }
     .entrada {
         font-size: 20px;
