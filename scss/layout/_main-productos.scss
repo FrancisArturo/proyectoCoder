@@ -1,0 +1,60 @@
+.productos-contenedor {
+    @include grid-propiedades (repeat(3, minmax(0, 1fr)), 10px);
+    padding: 30px 20px;
+    width: 100%;
+}
+.producto-imagen {
+    position: relative;
+    @include sizes (100%, 100%);
+    img {
+        width: 100%;
+        border: 1px solid black;
+        border-radius: 5%;
+    }
+}
+.producto-imagen-texto {
+    @include flex-propiedades (column, center, center);
+    position: absolute;
+    top: 0%;
+    z-index: 2;
+    @include sizes (100%, 100%);
+    opacity: 0;
+    border: 1px solid black;
+    background-size: cover;
+    transition: opacity 0.1s;
+    &:hover {
+        opacity: 1;
+    }
+    h4 {
+        font-size: 40px;
+        text-align: center;
+        color: white;
+    }
+}
+.hover-chip {
+    background-image: url(../images/producto-galletachip-hover1.jpg);
+    border-radius: 5%;
+}
+.hover-chocolate {
+    background-image: url(../images/prodcuto-galletadoblechocolate-hover1.jpg);
+    border-radius: 5%;
+}
+.hover-mani {
+    background-image: url(../images/producto-galletamani-hover.jpg);
+    border-radius: 5%;
+}
+.productos-botoncomprar {
+    display: block;
+    color: white;
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 15px 40px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all .3s;
+    &:hover {
+        background-color: white;
+        color: black;
+    }
+}

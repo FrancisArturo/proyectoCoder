@@ -1,0 +1,46 @@
+.contenedorcolumnas {
+    display: flex;
+    flex-wrap: wrap;
+    @include sizes (100%, 100%);
+}
+.columnahistoria-imagen {
+    border: 1px solid black;
+    img {
+        @include sizes (100%, 100%);
+        object-fit: cover;
+        vertical-align: middle;
+    }
+}
+.columna-flexible {
+    @include flex-propiedades (column, none, none);
+}
+.columnashistoria {
+    width: 50%;
+}
+.columnahistoria-texto {
+    @include flex-propiedades (none, center, center);
+    padding: 3rem;
+}
+.filacolumna1-1 {
+    h1 {
+        font-size: 33px;
+        margin-top: 30px;
+    }
+    p {
+        font-size: 17px;
+        margin: 15px;
+        line-height: 23px;
+    }
+}
+.titulo {
+    font-size: 45px;
+    text-align: center;
+    line-height: 50px;
+    margin: 20px;
+}
+.contenido {
+    font-size: 17px;
+    text-align: center;
+    margin: 15px;
+    line-height: 23px;
+}

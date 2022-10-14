@@ -1,0 +1,86 @@
+#footer-contenedor {
+    @include flex-propiedades (column, none, none);
+    .footer-newsletter {
+        background-color: $backgroundcolor-secundario;
+        @include flex-propiedades (row, center, none);
+        padding: 20px 0;
+    }
+}
+.newsletter-texto {
+    margin-right: 40px;
+}
+.entrada {
+    font-size: 32px;
+}
+.parrafo {
+    font-size: 18px;
+    margin-top: 15px;
+}
+.newsletter-input {
+    width: 100%;
+    @include flex-propiedades (none, space-between, center);
+    padding: 12px 24px;
+    background-color: #fae6c2;
+    border: 1px solid black;
+    border-radius: 30px;
+    margin-top: 12px;
+}
+#email {
+    border: unset;
+    border-color: unset;
+    background-color: unset;
+    margin-right: 30px;
+    padding-left: 6px;
+    font-weight: 500;
+    font-size: 20px;
+    &:focus {
+        background-color: $backgroundcolor-secundario;
+    }
+}
+.enviar {
+    background-color: unset;
+    border: unset;
+    cursor: pointer;
+    img {
+        @include sizes (24px, 24px);
+    }
+}
+.footer-navinfo {
+    @include flex-propiedades (row-reverse, space-around, center);
+    padding: 45px;
+}
+.links {
+    @include grid-propiedades (repeat(4,170px), 10px)
+}
+.links-grupo {
+    @include flex-propiedades (column, none, none);
+    h3 {
+        font-size: 25px;
+        margin-bottom: 4px;
+        font-weight: 600;
+    }
+    a {
+        text-decoration: none;
+        font-size: 15px;
+        margin-top: 15px;
+        img {
+            height: 22px;
+            margin-right: 10px;
+        }
+    }
+} 
+.span-redes {
+    display: flex;
+}
+.logofooter {
+    margin-top: unset;
+    @include flex-propiedades (column, none, none);
+}
+.logobottom {
+    @include sizes (250px, auto);
+    vertical-align: middle;
+}
+.copyright {
+    font-size: 15px;
+    margin-top: 9px;
+}

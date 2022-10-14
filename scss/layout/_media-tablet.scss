@@ -1,0 +1,118 @@
+@media (max-width: 1200px){     
+    .header-bottom {
+        padding: 10px 12px;
+    }
+    .linktexto {
+        margin-right: 12px;
+        font-size: 14px;
+    }
+    .entrada {
+        font-size: 25px;
+    }
+    .parrafo {
+        font-size: 14px;
+    }
+    .newsletter-input {
+        padding: 10px 20px;
+    }
+    .footer-navinfo {
+        padding: 25px 25px 50px;
+        @include flex-propiedades (column, none, center);
+    }
+    .logofooter {
+        margin-top: 40px;
+    }
+    .logobottom {
+        width: 180px;
+    }
+    .links {
+        @include grid-propiedades (repeat(4, minmax(0, 1fr)), 30px)
+        row-gap: 10px;
+    }
+    #galletasdeliciosas {
+        flex-direction: column;
+        border-right: unset;
+    }
+    .texto-imagen {
+        padding: 24px 20px;
+        @include flex-propiedades (none, center, center);
+        h1 {
+            font-size: 40px;
+        }
+    }
+    .galletahometop {
+        border-right: none;
+        border-top: 2px solid black;
+        border-right: 2px solid black;
+    }
+    #ingredientes {
+        padding: 55px 0px;
+    }
+    .ingrediente {
+        width: 33%;
+    }
+    .texto-ingredientes {
+        font-size: 32px;
+    }
+    #ingredientes-contendedor {
+        flex-wrap: wrap;
+    } 
+    .botonnuestrosproductos {
+        font-size: 35px;
+    }
+    .contacto-info {
+        flex-direction: column;
+    }
+    .galleta-contacto {
+        border-right: unset;
+        border-bottom: 1px solid black;
+        width: 100%;
+    }
+    .contacto-texto {
+        padding: 40px 15%;
+    }
+    .contacto-faq {
+        img {
+            display: none;
+        }
+    }
+    .texto-columna-contacto {
+        width: 100%;
+    }
+    .texto-faq-contacto {
+        width: 100%;
+        padding: 80px 15%;
+    }
+    .contenedorcolumnas {
+        flex-direction: column;
+    }
+    .columnashistoria {
+        width: 100%;
+    }
+    .lider {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .botoncomprarheader {
+        display: none;
+    }
+    .logoflexible-1 {
+        display: unset;
+    }
+    .logoflexible-2 {
+        display: none;
+    }
+    .nav-item {
+        a {
+            border-bottom: 2px solid black;
+            font-size: 20px;
+            padding-left: 10px;
+            font-weight: 600;
+        }
+    }
+    .links-flexibles {
+        @include flex-propiedades (row, center, none);
+    }
+}

@@ -1,0 +1,76 @@
+#contenido-contacto {
+    @include flex-propiedades (column, none, none);
+    width: 100%;
+    overflow: hidden;
+}
+.contacto-info {
+    @include flex-propiedades (row, none, none);
+    border-bottom: 1px solid black;
+}
+.galleta-contacto {
+    width: 65%;
+    height: auto;
+    border-right: 1px solid black;
+    object-fit: cover;
+}
+.texto-columna-contacto {
+    @include flex-propiedades (column, none, none);
+    width: 35%;
+}
+.contacto-texto {
+    height: 50%;
+    padding: 40px;
+    @include flex-propiedades (column, center, none);
+    border-bottom: 1px solid black;
+    h2 {
+        font-size: 32px;
+        margin-bottom: .5rem;
+        font-weight: 600;
+    }
+    p {
+        font-size: 18px;
+    }
+    a {
+        display: flex;
+        align-items: center;
+        font-size: 22px;
+        margin-top: 15px;
+        font-weight: 600;
+        img {
+            height: 30px;
+            margin-right: .5rem;
+        }
+    }
+}
+.contacto-faq {
+    display: flex;
+    img {
+        display: block;
+        border: 1px solid black;
+        border-top: unset;
+        object-fit: cover;
+        width: 35%;  
+    }
+}
+.texto-faq-contacto {
+    padding: 80px 150px;
+    width: 65%;
+    h3 {
+        font-size: 35px;
+        margin-bottom: 30px;
+        font-weight: 600;
+    }
+}
+.texto-faq {
+    border-bottom: 1px solid black;
+    padding: 15px 0;
+    h4 {
+        font-size: 22px;
+        margin-bottom: 15px;
+        font-weight: 600;
+    }
+    p{
+        font-size: 18px;
+        margin-bottom: .5rem;
+    }
+}

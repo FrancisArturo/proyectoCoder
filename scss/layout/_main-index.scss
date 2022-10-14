@@ -1,0 +1,105 @@
+#galletasdeliciosas {
+    @include flex-propiedades (row-reverse, none, center);
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+}
+.texto-imagen {
+    @include flex-propiedades (column, none, center);
+    padding: 0 30px;
+    max-width: 500px;
+    h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: 60px;
+        font-weight: 600;
+        text-align: center;
+    }
+}
+.galletahometop {
+    border-right: 2px solid black;
+    @include sizes (100%, 100%);
+    object-fit: cover;
+}
+.botoncomprarsection {
+    text-decoration: none;
+    text-align: center;
+    font-weight: 400;
+    font-size: 25px;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 10px 40px 10px 40px;
+    margin-top: 30px;
+    color: black;
+    transition: background-color .3s, color .3s;
+    &:hover {
+        background-color: black;
+        color: white;
+    }
+}
+#ingredientes {
+    @include flex-propiedades (column, none, center);
+    padding: 70px 0;
+}
+.texto-ingredientes {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    margin: 5px;
+    font-weight: 600;
+}
+#ingredientes-contendedor {
+    @include flex-propiedades (none, space-evenly, none);
+    padding: 10px;
+}
+.ingrediente {
+    @include flex-propiedades (column-reverse, none, center);
+    @include sizes (100%, 100%);
+    img {
+        @include sizes (70px, 70px);
+        vertical-align: middle;
+        margin: 40px; 
+        opacity: 0.4;
+    }
+    p {
+        font-size: 20px;
+        margin-top: -30px;
+    }
+}
+#imagen-aceite {
+    @include sizes (54px, 53px);
+    margin: 48px;
+    opacity: 0.7;
+}
+#imagen-lacteos {
+    @include sizes (57px, 57px);
+    margin: 46px;
+}
+#mira-productos {
+    @include sizes (100%, fit-content);
+    position: relative;
+    margin-bottom: 50px;
+    img {
+        border: 2px solid black;
+        width: 100%;
+        max-height: 650px;
+        object-fit: cover;
+    }
+}
+.contenedor-botonproductos {
+    @include flex-propiedades (column, center, center);
+    position: absolute;
+    top: 0%;
+    @include sizes (100%, 100%);
+}
+.botonnuestrosproductos {
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 400;
+    color: white;
+    transition: background-color .3s, color .3s;
+    &:hover {
+        background-color: white;
+        color: black;
+    }
+}

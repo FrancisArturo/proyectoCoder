@@ -1,0 +1,19 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+input {
+    color: fieldtext;
+    text-rendering: auto;
+    outline: none;
+}
+body {
+    font-family: $fuenteprincipal;
+    font-weight: 580;
+    font-style: normal;
+    background-color: $backgroundcolor-principal;
+}
+main {
+    display: block;
+    overflow: hidden;
+}
