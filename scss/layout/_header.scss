@@ -32,15 +32,15 @@
         color: white;   
     }
 }
-.logoflexible-1 {
-    display: none;
-}
 .logoflexible-2 {
     padding-left: 70px;
     vertical-align: middle;
     img {
         object-fit: cover;
     }
+}
+.logoflexible-1 {
+    display: none;
 }
 .links-flexibles {
     @include flex-propiedades (row, center, none);

@@ -21,15 +21,19 @@
     @include flex-propiedades (none, center, center);
     padding: 3rem;
 }
+.contenido {
+    font-size: 17px;
+    text-align: center;
+    margin: 15px;
+    line-height: 23px;
+}
 .filacolumna1-1 {
     h1 {
         font-size: 33px;
         margin-top: 30px;
     }
     p {
-        font-size: 17px;
-        margin: 15px;
-        line-height: 23px;
+        @extend .contenido;
     }
 }
 .titulo {
@@ -37,10 +41,4 @@
     text-align: center;
     line-height: 50px;
     margin: 20px;
-}
-.contenido {
-    font-size: 17px;
-    text-align: center;
-    margin: 15px;
-    line-height: 23px;
 }

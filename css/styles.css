@@ -8,6 +8,10 @@ a {
   text-decoration: none;
   color: black; }
 
+a:hover {
+  text-decoration: none;
+  color: black; }
+
 input {
   color: fieldtext;
   text-rendering: auto;
@@ -61,14 +65,14 @@ main {
     background-color: black;
     color: white; }
 
-.logoflexible-1 {
-  display: none; }
-
 .logoflexible-2 {
   padding-left: 70px;
   vertical-align: middle; }
   .logoflexible-2 img {
     object-fit: cover; }
+
+.logoflexible-1 {
+  display: none; }
 
 .links-flexibles {
   display: flex;
@@ -336,26 +340,21 @@ main {
   align-items: center;
   padding: 3rem; }
 
+.contenido, .filacolumna1-1 p {
+  font-size: 17px;
+  text-align: center;
+  margin: 15px;
+  line-height: 23px; }
+
 .filacolumna1-1 h1 {
   font-size: 33px;
   margin-top: 30px; }
-
-.filacolumna1-1 p {
-  font-size: 17px;
-  margin: 15px;
-  line-height: 23px; }
 
 .titulo {
   font-size: 45px;
   text-align: center;
   line-height: 50px;
   margin: 20px; }
-
-.contenido {
-  font-size: 17px;
-  text-align: center;
-  margin: 15px;
-  line-height: 23px; }
 
 #local {
   display: flex;
@@ -710,4 +709,6 @@ main {
   .texto-faq-contacto {
     padding: 30px 15px; }
     .texto-faq-contacto h3 {
-      font-size: 28px; } }
+      font-size: 28px; }
+  .texto-faq p {
+    font-size: 16px; } }
